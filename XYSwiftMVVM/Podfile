@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+def develop_pods
+    
+    # 异步编程的框架
+    # pod 'RxSwift',    '~> 4.0'
+    pod 'RxCocoa' 
+    # 网络请求库
+    pod 'Moya/RxSwift', '~> 13.0'
+    # 自动布局
+    pod 'SnapKit'
+    # 图片下载库
+    pod 'Kingfisher'
+    # JSON解析
+    pod 'HandyJSON', '5.0.0-beta.1'
+    # 刷新控件
+    pod 'PullToRefreshKit'
+end
+
+target 'XYSwiftMVVM' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  develop_pods
+
+end
